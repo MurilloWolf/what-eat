@@ -1,7 +1,7 @@
 import awnserDb from './db/awnser-db'
 import foodDb from './db/food-db'
 
-function generateAwnsersAndFoods() {
+export function generateAwnsersAndFoods() {
   return awnserDb.map((awnser) => {
     const food = foodDb[Math.floor(Math.random() * foodDb.length)]
     return { awnser, food }
